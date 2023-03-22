@@ -11,6 +11,7 @@ body{
 /* classi riutilizzabili */
 
 .flex   {display: flex;}
+.column {flex-direction: column;}
 
 .boxed  {
     width: 80%;
@@ -21,6 +22,11 @@ body{
 .marg20 {margin-top: 20px;}
 .marg40 {margin-top: 40px;}
 .marg60 {margin-top: 60px;}
+
+.margleft10 {margin-left: 10px;}
+.margleft20 {margin-left: 20px;}
+.margleft30 {margin-left: 30px;}
+.margleft40 {margin-left: 40px;}
 
 .marg_bott10 {margin-bottom: 10px;}
 .marg_bott20 {margin-bottom: 20px;}
@@ -67,9 +73,11 @@ body{
 
 .sidebar{
     width: 18%;
-    height: 100vh;
+    height: calc(100vh - 80px);
     background-color: black;
     flex-direction: column;
+    overflow-y: auto;
+    justify-content: space-between;
 }
 
 .sidebar_logo{
@@ -102,7 +110,7 @@ body{
 .sidebar_icon span{
     color: #6f6f6f;
     flex-direction: row;
-    display: none;
+    /* display: none; */
 }
 
 .icon_name{
@@ -112,6 +120,63 @@ body{
 .icon_name:hover img, .icon_name:hover span{
     color: white;
     opacity: 1;
+    cursor: pointer;
+}
+
+.playlist{
+    /* display: none; */
+}
+
+.playlist h3{
+    color:white;
+    font-size: 15px;
+    margin-left: 30px;
+}
+
+.playlist_plus{
+    align-items: center;
+}
+
+.playlist_plus:hover .plus{
+    background-color: white;
+    cursor: pointer;
+}
+
+.playlist_plus:hover #plus_script{
+    color: white;
+    cursor: pointer;
+}
+
+.plus{
+    padding: 5px 10px;
+    background-color: #6f6f6f;
+    color: black;
+    font-size: 40px;
+    font-weight: 800;
+}
+
+#plus_script{
+    color: #6f6f6f;
+}
+
+.playlist a{
+    text-decoration: none;
+    color: #6f6f6f;
+}
+
+.playlist a:hover{
+    color: white;
+}
+
+
+.installer img{
+    opacity: 0.5;
+    width: 30px;
+    
+}
+
+.installer span{
+    color: #6f6f6f;
 }
 
 
@@ -172,6 +237,4 @@ body{
     width: 100%;
     padding: 40px;
     background-color: #282828;
-    position: fixed;
-    bottom: 0;
 }
