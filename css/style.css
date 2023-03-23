@@ -44,31 +44,7 @@ body{
 .line3  {line-height: 3em;}
 .line4  {line-height: 4em;}
 
-/* header */
-
-.navbar{
-    width: calc(100% - 250px);
-    background-color: rgba(0, 0, 0, 0.5);
-    align-items: center;
-    height: 100px;
-    justify-content: flex-end;
-}
-
-.upgrade button{
-    border: 1px solid white;
-    padding: 10px 50px;
-    border-radius: 20px;
-    color: white;
-    background-color: transparent;
-    margin-right: 30px;
-}
-
-.upgrade button:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-    /* main firt section */
+/* sidebar section */
 
 .sidebar{
     width: 250px;
@@ -85,13 +61,10 @@ body{
     max-width: 100px;
 }
 
-.sidebar_logo img{
-    display: none;
-}
-
 .sidebar i{
     font-size: 35px;
     color: white;
+    display: none;
 }
 
 .sidebar_icon{
@@ -108,8 +81,8 @@ body{
 .sidebar_icon span{
     color: #6f6f6f;
     flex-direction: row;
-    /* display: none; */
 }
+
 
 .icon_name{
     align-items: center;
@@ -119,10 +92,11 @@ body{
     color: white;
     opacity: 1;
     cursor: pointer;
+    
 }
 
-.playlist{
-    /* display: none; */
+.icon_name:hover img{
+    border-left: 1px solid #adff2f;
 }
 
 .playlist h3{
@@ -166,7 +140,11 @@ body{
     color: white;
 }
 
-
+.installer{
+    align-items: center;
+    border-bottom: 1px solid #6f6f6f;
+    width: 80%;
+}
 .installer img{
     opacity: 0.5;
     width: 30px;
@@ -176,6 +154,131 @@ body{
 .installer span{
     color: #6f6f6f;
 }
+
+.installer:hover img, .installer:hover span{
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.name_account{
+    align-items: center;
+}
+
+.name_account img{
+    width: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    background-color: #6f6f6f;
+}
+
+.name_account span{
+    color: white;
+}
+  /* call to action section */
+
+.wrapper{
+    width: calc(100% - 250px);
+}
+
+.rightbar{
+    width: calc(100% - 250px);
+    background-color: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    height: 100px;
+    justify-content: flex-end;
+    position: fixed;
+    z-index: 2;
+}
+
+.upgrade button{
+    border: 1px solid white;
+    padding: 10px 50px;
+    border-radius: 20px;
+    color: white;
+    background-color: transparent;
+    margin-right: 30px;
+}
+
+.upgrade button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.down_container{
+    width: 100%;
+    margin-top: 100px;
+    padding: 20px;
+}
+
+.navbar{
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: #6f6f6f;
+    font-size: 14px;
+}
+
+/* .navbar a:hover{
+    border-bottom: 1px solid #adff2f;
+} */
+
+.recently h3{
+    color: white;
+    font-size: 25px;
+}
+
+.recently_box{
+    width: 100%;
+}
+
+.recently_album{
+    width: calc(100% / 6 - 20px);
+    margin-right: 20px;
+    text-align: center;
+}
+
+.player{
+    position: relative;
+}
+
+.player img{
+    width: 100%;
+}
+
+.player i{
+    display: none;
+}
+
+.player:hover i{
+    display: block;
+}
+
+.player:hover img{
+    opacity: 0.2;
+}
+
+.recently_album i{
+    color: white;
+    font-size: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.recently_album h4{
+    color: white;
+}
+
+.recently_album p{
+    color: #6f6f6f;
+}
+  
 
 
 
