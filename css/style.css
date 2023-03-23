@@ -47,32 +47,31 @@ body{
 /* header */
 
 .navbar{
-    width: 100%;
+    width: calc(100% - 250px);
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+    align-items: center;
+    height: 100px;
     justify-content: flex-end;
-    position: fixed;
-    z-index: -1;
 }
 
-.navbar button{
+.upgrade button{
     border: 1px solid white;
     padding: 10px 50px;
     border-radius: 20px;
     color: white;
     background-color: transparent;
-    margin-right: 20px;
+    margin-right: 30px;
 }
 
-.navbar button:hover{
-    transform: scale(1.2);
+.upgrade button:hover{
+    transform: scale(1.1);
     cursor: pointer;
 }
 
     /* main firt section */
 
 .sidebar{
-    width: 18%;
+    width: 250px;
     height: calc(100vh - 80px);
     background-color: black;
     flex-direction: column;
@@ -81,7 +80,6 @@ body{
 }
 
 .sidebar_logo{
-    z-index: 2;
     margin-left: 20px;
     margin-right: 40px;
     max-width: 100px;
@@ -235,6 +233,6 @@ body{
 
 .footbar{
     width: 100%;
-    padding: 40px;
+    height: 80px;
     background-color: #282828;
 }
