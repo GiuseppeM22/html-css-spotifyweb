@@ -124,11 +124,92 @@
                             </div>
                         </div>
                     </div>
+                    <div class="recently marg20">
+                        <h3>Creato per Jhon Doe</h3>
+                        <p class="marg10">Più ascolti, più accurati saranno i suggerimenti</p>
+                        <div class="recently_box flex">
+                            <div class="recently_album marg20 flex column">
+                                <div class="player">
+                                    <img src="./img/radar.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <h4 class="marg10">Release Radar</h4>
+                            </div>
+                            <div class="recently_album marg20 flex column">
+                                <div class="player">
+                                    <img src="./img/mixdaily.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <h4 class="marg10">Daily Mix 1</h4>
+                            </div>
+                    </div>
+                    <div class="recently marg20">
+                        <h3>Artisti più popolari</h3>
+                        <p class="marg10">Più ascolti, più accurati saranno i suggerimenti</p>
+                        <div class="recently_box flex">
+                            <div class="recently_album marg20 flex column">
+                                <div class="player" id="radius">
+                                    <img src="./img/youg.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <h4 class="marg10">Youg</h4>
+                                <p class="marg10">Subtitle</p>
+                            </div>
+                            <div class="recently_album marg20 flex column">
+                                <div class="player" id="radius">
+                                    <img src="./img/einaudi.jpeg" alt="">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </div>
+                                <h4 class="marg10">Einaudi</h4>
+                                <p class="marg10">Nuvole bianche</p>
+                            </div>
+                    </div>
                 </div>
             </div>
         </div>
     </main>
             
+    <footer>
+        <div class="footbar flex">
+            <div class="footer_box margleft10 flex">
+                <img src="./img/sinister.jpeg" alt="">
+                <div class="flex column margleft10">
+                    <h4>Sinister</h4>
+                    <span>Brano Nome</span>
+                </div>
+                <i class="fa-regular fa-heart margleft40" style="color: #6f6f6f;"></i>
+                <i class="fa-regular fa-folder margleft20" style="color: #6f6f6f;"></i>
+            </div>
+            <div class="footer_box flex column">
+                <div class="up_play flex">
+                    <i class="fa-solid fa-shuffle" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-backward-step margleft30" style="color: #ffffff;"></i>
+                    <i class="fa-regular fa-circle-play margleft30" id="cirlce_play" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-backward-step fa-rotate-180 margleft30" style="color: #ffffff;"></i>
+                    <i class="fa-solid fa-arrow-rotate-right margleft30" style="color: #ffffff;"></i>
+                </div>
+                <div class="down_play flex marg20">
+                    <span>0:25</span>
+                    <div class="riproduction_bar flex margleft20">
+                        <div class="riproduction_bar_int"></div><span id="bar_radius"></span>
+                    </div>
+                    <span class="margleft20">4:35</span>
+                </div>
+            </div>
+            <div class="footer_box flex">
+                <i class="fa-solid fa-bars" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-tv margleft20" style="color: #ffffff;"></i>
+                <i class="fa-solid fa-volume-high margleft20" style="color: #ffffff;"></i>
+                <div class="mini_bar flex margleft20">
+                    <div class="mini_bar_int"></div><span id="bar_radius"></span>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
+
 
         
         
@@ -144,11 +225,3 @@
    
 
        
-
-    <footer>
-        <div class="footbar">
-
-        </div>
-    </footer>
-</body>
-</html>
