@@ -99,6 +99,7 @@ body{
     border-left: 1px solid #adff2f;
 }
 
+
 .playlist h3{
     color:white;
     font-size: 15px;
@@ -224,6 +225,24 @@ body{
     text-decoration: none;
     color: #6f6f6f;
     font-size: 14px;
+    position: relative;
+}
+
+.navbar a:first-child:after{
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    content: " ";
+    background-color: #adff2f;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 5px;
+
+}
+
+.navbar a:hover{
+    color: white;
 }
 
 /* .navbar a:hover{
@@ -318,10 +337,22 @@ body{
 
 .footer_box h4{
     color: white;
+    font-size: 14px;
 }
 
 .footer_box span{
     color: #6f6f6f;
+    font-size: 14px;
+}
+
+.footer_box span:hover{
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.phone_adapt i{
+    margin-left: 20px;
 }
 
 .up_play i{
@@ -331,10 +362,11 @@ body{
 
 .down_play{
     align-items: center;
+    width: 150%;
 }
 
 .riproduction_bar{
-    width: 450px;
+    width: 70%;
     height: 4px;
     background-color: #6f6f6f;
     border-radius: 2px;
@@ -343,6 +375,7 @@ body{
 
 .riproduction_bar:hover .riproduction_bar_int{
     background-color: #adff2f;
+    cursor: pointer;
 }
 
 .down_play span{
@@ -350,7 +383,7 @@ body{
 }
 
 .riproduction_bar_int{
-    width: 150px;
+    width: 40%;
     height: 100%;
     background-color: white;
     border-radius: 2px;
@@ -358,7 +391,7 @@ body{
 }
 
 .mini_bar{
-    width: 80px;
+    width: 30%;
     height: 4px;
     background-color: #6f6f6f;
     border-radius: 2px;
@@ -371,10 +404,11 @@ body{
 
 .mini_bar:hover .mini_bar_int{
     background-color: #adff2f;
+    cursor: pointer;
 }
 
 .mini_bar_int{
-    width: 20px;
+    width: 50%;
     height: 100%;
     background-color: white;
     border-radius: 2px;
@@ -392,11 +426,125 @@ body{
     display: block;
 }
 
+/* layaut responsive */
+
+/* medium desktop */
+@media  screen and (max-width:992px) {
+    .down_container{
+        width: 100%;
+    }
+    
+    .navbar{
+        width: 100%;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .navbar a{
+        padding-bottom: 20px;
+    }
+
+    .recently_box{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .recently_album{
+        width: calc(100% / 4 - 20px);
+    }
+
+    .footer_box{
+        align-items: center;
+        width: 26%;
+    }
+}
+
+/* tablet mediaquery */
+
+@media  screen and (max-width:769px) {
+    .recently_box{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+
+    .recently_album{
+        width: calc(100% / 2 - 20px);
+    }
+
+    .prova{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mini_bar{
+        margin-top: 20px;
+    }
+
+}
 
 
+/* smartphone mediaquery */
 
+@media  screen and (max-width:500px){
+    .sidebar{
+        width: 100px;
+    }
 
+    .wrapper{
+        width: calc(100% - 50px);
+}
 
+    .rightbar{
+        width: calc(100% - 50px);
+        justify-content: flex-start;
+    }
+
+    .sidebar_icon span{
+        display: none;
+    }
+
+    .playlist{
+        display: none;
+    }
+
+    .sidebar i{
+        display: block;
+        width: 20px;
+    }
+
+    .none img, .none span{
+        display: none;
+    }
+
+    .installer{
+        border-bottom: none;
+    }
+
+    .name_account span{
+        display: none;
+    }
+
+    .phone_adapt{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .phone_adapt i{
+        margin-bottom: 5px;
+    }
+
+    .prova{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .mini_bar{
+        margin-top: 20px;
+    }
+
+}
 
 
 
