@@ -429,6 +429,25 @@ body{
 /* layaut responsive */
 
 /* medium desktop */
+
+@media  screen and (max-width:1225px) {
+    .down_container{
+        width: 100%;
+    }
+    
+    .navbar{
+        width: 100%;
+        margin: auto;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .navbar a{
+        padding-bottom: 20px;
+    }
+}
+
 @media  screen and (max-width:992px) {
     .down_container{
         width: 100%;
